@@ -17,6 +17,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v6
 
+      - name: Set perms
+        run : |
+          git config --local user.email "greg@ipmcomputers.com"
+          git cofnig --local user.name "Greg Rogers"
+
       # Set up Node.js
       - name: Get Node version
         id: get_node_version
